@@ -1,102 +1,185 @@
-
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Learn more about Riya Barde, a IT Engineering student interested in software development and technology.">
 
-    <meta name="author" content="Riya Barde">
+<meta name="description"
+      content="Learn more about Riya Barde, an IT Engineering student interested in software development and technology.">
+<meta name="author" content="Riya Barde">
+<meta name="robots" content="index, follow">
 
-    <meta name="robots" content="index, follow">
+<title>About | Riya Barde</title>
 
-    <title>About | Riya Barde </title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
 
-    <header>
-        <nav aria-label="Main navigation">
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-            <a href="index.html" aria-label="Go to Home page">
-                Riya Barde
-            </a>
+<!-- Header -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" aria-current="page">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <a href="index.html" class="logo" aria-label="Go to Home page">
+            Riya Barde
+        </a>
 
-        </nav>
-    </header>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
 
-    <main id="main-content">
+            <li>
+                <a href="about.html" class="active" aria-current="page">
+                    About
+                </a>
+            </li>
 
-        <section aria-labelledby="about-heading">
+            <li><a href="projects.html">Projects</a></li>
 
-            <h1 id="about-heading">About Me</h1>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
 
-            <p>
-                I am a IT student with an interest in
-                software development, web development and programming.
-            </p>
+        <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode">
+            🌙
+        </button>
 
-            <p>
-                I enjoy learning new technologies and improving my
-                problem-solving and programming skills.
-            </p>
+    </nav>
+</header>
 
-        </section>
+<!-- Main -->
+<main id="main-content">
 
-        <section aria-labelledby="education-heading">
+    <!-- About Hero -->
+    <section class="page-hero section-container"
+             aria-labelledby="about-heading">
 
+        <p class="eyebrow">Get To Know Me</p>
+
+        <h1 id="about-heading">About Me</h1>
+
+        <p>
+            I am an IT Engineering student with an interest in software
+            development, web development and programming.
+        </p>
+
+        <p>
+            I enjoy learning new technologies and improving my
+            problem-solving and programming skills.
+        </p>
+
+    </section>
+
+    <!-- Education -->
+    <section class="section-container"
+             aria-labelledby="education-heading">
+
+        <div class="section-heading">
+            <p class="eyebrow">My Journey</p>
             <h2 id="education-heading">Education</h2>
+        </div>
 
-            <article>
+        <div class="about-grid">
+
+            <article class="info-card">
+
+                <div class="card-icon">🎓</div>
 
                 <h3>IT Engineering</h3>
 
                 <p>
-                    I am currently pursuing my degree in IT Engineering.
+                    I am currently pursuing my degree in Information
+                    Technology Engineering.
+                </p>
+
+                <p class="card-highlight">
+                    Bachelor of Engineering
                 </p>
 
             </article>
 
-        </section>
+            <article class="info-card">
 
-        <section aria-labelledby="interests-heading">
+                <div class="card-icon">💡</div>
 
+                <h3>Learning Journey</h3>
+
+                <p>
+                    I continuously practice programming, web development,
+                    data structures and emerging technologies.
+                </p>
+
+                <p class="card-highlight">
+                    Learn • Practice • Build
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- Interests -->
+    <section class="section-container"
+             aria-labelledby="interests-heading">
+
+        <div class="section-heading">
+            <p class="eyebrow">What I Love</p>
             <h2 id="interests-heading">My Interests</h2>
+        </div>
 
-            <ul>
-                <li>Software Development</li>
-                <li>Web Development</li>
-                <li>Programming</li>
-                <li>Artificial Intelligence</li>
-                <li>Learning New Technologies</li>
-            </ul>
+        <ul class="interest-grid">
 
-        </section>
+            <li class="interest-card">
+                <span>💻</span>
+                <h3>Software Development</h3>
+            </li>
 
-    </main>
+            <li class="interest-card">
+                <span>🌐</span>
+                <h3>Web Development</h3>
+            </li>
 
-    <footer>
-        <p>
-            &copy; 2026 Riya Barde. All rights reserved.
-        </p>
-    </footer>
+            <li class="interest-card">
+                <span>👩‍💻</span>
+                <h3>Programming</h3>
+            </li>
+
+            <li class="interest-card">
+                <span>🤖</span>
+                <h3>Artificial Intelligence</h3>
+            </li>
+
+            <li class="interest-card">
+                <span>📚</span>
+                <h3>Learning New Technologies</h3>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2026 Riya Barde. All rights reserved.</p>
+        <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
