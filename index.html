@@ -1,90 +1,194 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Riya Barde- IT Engineering student portfolio showcasing skills, projects and contact information.">
 
-    <meta name="author" content="Riya Barde">
+<meta name="description"
+      content="Riya Barde - IT Engineering student portfolio showcasing skills, projects and contact information.">
+<meta name="author" content="Riya Barde">
+<meta name="robots" content="index, follow">
 
-    <meta name="robots" content="index, follow">
+<title>Riya Barde | IT Engineering Student</title>
 
-    <title>Riya Barde | IT Engineering Student</title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Skip link helps keyboard and screen-reader users -->
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
 
-    <header>
-        <nav aria-label="Main navigation">
-            <a href="index.html" aria-label="Go to Home page">
-                Riya Barde
-            </a>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-            <ul>
-                <li><a href="index.html" aria-current="page">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Header -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
 
-    <main id="main-content">
+        <a href="index.html" class="logo" aria-label="Go to Home page">
+            Riya Barde
+        </a>
 
-        <section aria-labelledby="intro-heading">
+        <ul class="nav-links">
+            <li>
+                <a href="index.html" class="active" aria-current="page">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+
+        <!-- Dark / Light Mode -->
+        <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode">
+            🌙
+        </button>
+
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main id="main-content">
+
+    <!-- Hero Section -->
+    <section class="hero section-container" aria-labelledby="intro-heading">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">IT Engineering Student</p>
 
             <h1 id="intro-heading">
-                Hello, I'm Riya Barde
+                Hello, I'm <span>Riya Barde</span>
             </h1>
 
-            <p>
-                I am a IT Engineering student interested in
-                software development, web development and programming.
+            <p class="hero-text">
+                I am an IT Engineering student interested in software development,
+                web development, programming and emerging technologies.
             </p>
 
-            <p>
-                Welcome to my personal portfolio website.
+            <p class="hero-description">
+                Welcome to my personal portfolio where you can explore my skills,
+                projects and learning journey.
             </p>
 
-            <a href="projects.html">
-                View My Projects
-            </a>
+            <div class="hero-buttons">
+                <a href="projects.html" class="btn primary-btn">
+                    View My Projects
+                </a>
 
-        </section>
+                <a href="contact.html" class="btn secondary-btn">
+                    Contact Me
+                </a>
+            </div>
 
-        <section aria-labelledby="skills-heading">
+        </div>
+
+        <div class="hero-card">
+
+            <div class="hero-card-icon">💻</div>
+
+            <h2>Building. Learning. Growing.</h2>
+
+            <p>
+                Exploring web development, programming and AI while
+                continuously improving my technical skills.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section-container" aria-labelledby="skills-heading">
+
+        <div class="section-heading">
+            <p class="eyebrow">What I Know</p>
 
             <h2 id="skills-heading">My Skills</h2>
 
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>HTML and CSS</li>
-                <li>javascript</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Web Development</li>
-            </ul>
+            <p>
+                Technologies and concepts I am currently learning and working with.
+            </p>
+        </div>
 
-        </section>
+        <ul class="skills-grid">
 
-    </main>
+            <li class="skill-card">
+                <span>☕</span>
+                <h3>Java</h3>
+                <p>Programming & problem solving</p>
+            </li>
 
-    <footer>
+            <li class="skill-card">
+                <span>🐍</span>
+                <h3>Python</h3>
+                <p>Programming & AI fundamentals</p>
+            </li>
+
+            <li class="skill-card">
+                <span>🌐</span>
+                <h3>HTML & CSS</h3>
+                <p>Semantic and responsive web design</p>
+            </li>
+
+            <li class="skill-card">
+                <span>⚡</span>
+                <h3>JavaScript</h3>
+                <p>Interactive web applications</p>
+            </li>
+
+            <li class="skill-card">
+                <span>🧠</span>
+                <h3>DSA</h3>
+                <p>Data structures and algorithms</p>
+            </li>
+
+            <li class="skill-card">
+                <span>🚀</span>
+                <h3>Web Development</h3>
+                <p>Building modern websites</p>
+            </li>
+
+        </ul>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+
+    <div class="footer-content">
         <p>
             &copy; 2026 Riya Barde. All rights reserved.
         </p>
-    </footer>
+
+        <p>
+            Built with HTML, CSS & JavaScript.
+        </p>
+    </div>
+
+</footer>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
 
 </body>
 </html>
