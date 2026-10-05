@@ -1,118 +1,202 @@
 
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Projects by Riya Barde, including Java, web development and AI-based projects.">
 
-    <meta name="author" content="Riya Barde">
+<meta name="description"
+      content="Projects by Riya Barde, including web development and AI-based projects.">
+<meta name="author" content="Riya Barde">
+<meta name="robots" content="index, follow">
 
-    <meta name="robots" content="index, follow">
+<title>Projects | Riya Barde</title>
 
-    <title>Projects |Riya Barde </title>
+<link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
 
-    <header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <nav aria-label="Main navigation">
+<!-- Header -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
 
-            <a href="index.html" aria-label="Go to Home page">
-                Riya Barde
-            </a>
+        <a href="index.html" class="logo" aria-label="Go to Home page">
+            Riya Barde
+        </a>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li>
-                    <a href="projects.html" aria-current="page">
-                        Projects
-                    </a>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <ul class="nav-links">
 
-        </nav>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
 
-    </header>
+            <li>
+                <a href="about.html">About</a>
+            </li>
 
-    <main id="main-content">
+            <li>
+                <a href="projects.html"
+                   class="active"
+                   aria-current="page">
+                    Projects
+                </a>
+            </li>
 
-        <section aria-labelledby="projects-heading">
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
 
-            <h1 id="projects-heading">My Projects</h1>
+        </ul>
 
-            <p>
-                Here are some projects that I have worked on while
-                learning programming and software development.
-            </p>
+        <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode">
+            🌙
+        </button>
 
-        </section>
+    </nav>
+</header>
 
-        <section aria-labelledby="project-list-heading">
+<!-- Main -->
+<main id="main-content">
 
-            <h2 id="project-list-heading">Featured Projects</h2>
+    <!-- Page Introduction -->
+    <section class="page-hero section-container"
+             aria-labelledby="projects-heading">
 
-            <article>
+        <p class="eyebrow">My Work</p>
 
-                <h3>Virtual Interview Simulator</h3>
-
-                <p>
-                    A web-based interview practice project where candidates can answer interview
-                    questions using audio, helping them practice interview communication and response skills.
-                   
-                </p>
-
-            </article>
-
-            <article>
-
-                <h3>InternAI</h3>
-
-                <p>
-                    An AI-based smart allocation prototype designed to
-                    match candidates with suitable internship
-                    opportunities using skills, eligibility and
-                    opportunity information.
-                </p>
-
-            </article>
-
-            <article>
-
-                <h3>Personal Portfolio Website</h3>
-
-                <p>
-                    A multi-page personal portfolio website built using
-                    semantic HTML5 and CSS with a focus on accessibility,
-                    SEO and keyboard navigation.
-                </p>
-
-            </article>
-
-        </section>
-
-    </main>
-
-    <footer>
+        <h1 id="projects-heading">My Projects</h1>
 
         <p>
-            &copy; 2026 Riya Barde. All rights reserved.
+            Here are some projects that I have worked on while learning
+            programming and software development.
         </p>
 
-    </footer>
+    </section>
+
+    <!-- Projects -->
+    <section class="section-container"
+             aria-labelledby="project-list-heading">
+
+        <div class="section-heading">
+            <p class="eyebrow">Featured Work</p>
+            <h2 id="project-list-heading">Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <article class="project-card">
+
+                <div class="project-icon">🎤</div>
+
+                <div class="project-content">
+
+                    <span class="project-number">01</span>
+
+                    <h3>Virtual Interview Simulator</h3>
+
+                    <p>
+                        A web-based interview practice project where
+                        candidates can answer interview questions using
+                        audio, helping them practice interview
+                        communication and response skills.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+
+                <div class="project-icon">🤖</div>
+
+                <div class="project-content">
+
+                    <span class="project-number">02</span>
+
+                    <h3>InternAI</h3>
+
+                    <p>
+                        An AI-based smart allocation prototype designed
+                        to match candidates with suitable internship
+                        opportunities using skills, eligibility and
+                        opportunity information.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>NLP</span>
+                        <span>Web</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+
+                <div class="project-icon">🌐</div>
+
+                <div class="project-content">
+
+                    <span class="project-number">03</span>
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A multi-page personal portfolio website built
+                        using semantic HTML5 and CSS with a focus on
+                        accessibility, SEO, responsive design and
+                        keyboard navigation.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+
+    <div class="footer-content">
+        <p>&copy; 2026 Riya Barde. All rights reserved.</p>
+        <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
