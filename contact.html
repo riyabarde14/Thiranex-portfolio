@@ -1,139 +1,208 @@
-
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-          content="Contact Riya Barde for questions, opportunities and collaboration.">
 
-    <meta name="author" content="Riya Barde">
+<meta name="description"
+      content="Contact Riya Barde for questions, opportunities and collaboration.">
+<meta name="author" content="Riya Barde">
+<meta name="robots" content="index, follow">
 
-    <meta name="robots" content="index, follow">
+<title>Contact | Riya Barde</title>
 
-    <title>Contact |Riya Barde</title>
+<link rel="stylesheet" href="style.css">
+```
 
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <a href="#main-content" class="skip-link">
-        Skip to main content
-    </a>
 
-    <header>
+<a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <nav aria-label="Main navigation">
+<!-- Header -->
+<header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
 
-            <a href="index.html" aria-label="Go to Home page">
-               Riya Barde
-            </a>
+        <a href="index.html" class="logo" aria-label="Go to Home page">
+            Riya Barde
+        </a>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li>
-                    <a href="contact.html" aria-current="page">
-                        Contact
-                    </a>
-                </li>
-            </ul>
+        <ul class="nav-links">
 
-        </nav>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
 
-    </header>
+            <li>
+                <a href="about.html">About</a>
+            </li>
 
-    <main id="main-content">
+            <li>
+                <a href="projects.html">Projects</a>
+            </li>
 
-        <section aria-labelledby="contact-heading">
+            <li>
+                <a href="contact.html"
+                   class="active"
+                   aria-current="page">
+                    Contact
+                </a>
+            </li>
 
-            <h1 id="contact-heading">Contact Me</h1>
+        </ul>
 
-            <p>
-                If you would like to contact me, please fill out the
-                form below.
-            </p>
+        <button
+            id="theme-toggle"
+            class="theme-toggle"
+            type="button"
+            aria-label="Toggle dark mode">
+            🌙
+        </button>
 
-        </section>
+    </nav>
+</header>
 
-        <section aria-labelledby="form-heading">
+<!-- Main -->
+<main id="main-content">
 
-            <h2 id="form-heading">Send a Message</h2>
+    <!-- Contact Introduction -->
+    <section class="page-hero section-container"
+             aria-labelledby="contact-heading">
 
-            <form action="#" method="post">
+        <p class="eyebrow">Let's Connect</p>
 
-                <div>
-                    <label for="name">Full Name</label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        autocomplete="name"
-                        required
-                        aria-required="true"
-                    >
-                </div>
-
-                <div>
-                    <label for="email">Email Address</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        autocomplete="email"
-                        required
-                        aria-required="true"
-                    >
-                </div>
-
-                <div>
-                    <label for="subject">Subject</label>
-
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        required
-                        aria-required="true"
-                    >
-                </div>
-
-                <div>
-                    <label for="message">Message</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required
-                        aria-required="true"
-                    ></textarea>
-                </div>
-
-                <button type="submit">
-                    Send Message
-                </button>
-
-            </form>
-
-        </section>
-
-    </main>
-
-    <footer>
+        <h1 id="contact-heading">Contact Me</h1>
 
         <p>
-            &copy; 2026 Riya Barde. All rights reserved.
+            If you would like to contact me, please fill out the
+            form below.
         </p>
 
-    </footer>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="section-container"
+             aria-labelledby="form-heading">
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <p class="eyebrow">Get In Touch</p>
+
+                <h2>Send a Message</h2>
+
+                <p>
+                    Have a question, opportunity or collaboration idea?
+                    Feel free to send me a message.
+                </p>
+
+                <div class="contact-item">
+                    <span>📧</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>Let's connect through email.</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <span>💼</span>
+                    <div>
+                        <h3>Opportunities</h3>
+                        <p>Open to learning and professional opportunities.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-card">
+
+                <h2 id="form-heading">Your Message</h2>
+
+                <form action="#" method="post">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            autocomplete="name"
+                            placeholder="Enter your full name"
+                            required
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="Enter your email"
+                            required
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter subject"
+                            required
+                            aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                            aria-required="true"></textarea>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn">
+                        Send Message →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+
+    <div class="footer-content">
+        <p>&copy; 2026 Riya Barde. All rights reserved.</p>
+        <p>Built with HTML, CSS & JavaScript.</p>
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
